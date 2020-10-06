@@ -1,3 +1,5 @@
+import sys
+
 def file_word_count(filename):
     word_counts = {}
 
@@ -9,17 +11,8 @@ def file_word_count(filename):
 
     for key, value in word_counts.items():
         print(f"{key} {value}")    
-        
-
-
-
-
-    #for word in text_file:
-    #    word_counts[word] = word_counts.get(word, 0) + 1
     
     return word_counts
 
-file_word_count("test.txt")
+file_word_count(argv[1])
 
-
-    
