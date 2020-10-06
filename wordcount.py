@@ -14,5 +14,6 @@ def file_word_count(filename):
     
     return word_counts
 
-file_word_count(argv[1])
+filename = sys.argv[1]
+file_word_count(filename)
 
